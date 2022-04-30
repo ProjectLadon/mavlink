@@ -45,6 +45,9 @@
             <entry value="8" name="SAIL_POS_ID_8">
                 <description>Wingsail #8</description>
             </entry>
+            <entry value="255" name="SAIL_POS_ID_NONE">
+                <description>No wingsail defined</description>
+            </entry>
         </enum>
         <enum name="SAIL_ANGLE_TYPE">
             <description>The type of the angle of the sail command/report</description>
@@ -89,6 +92,7 @@
             <description>Wind information</description>
             <field type="uint8_t" name="target_system">System ID</field>
             <field type="uint8_t" name="target_component">Component ID</field>
+            <field type="uint8_t" name="source_sail" enum="SAIL_POS_ID">If the wind instrument is mounted on wingsail, it's defined here</field>
             <field type="uint8_t" name="wind_type" enum="WIND_DATA_TYPE">Wind data type (apparent, true, or raw)</field>
             <field type="float" name="speed" units="m/s" invalid="NAN">The speed of the wind, m/s</field>
             <field type="float" name="direction" units="deg" invalid="NAN">The direction of the wind, degrees clockwise from north</field>
