@@ -2,6 +2,7 @@
 <mavlink>
 
     <include>development.xml</include>
+    <include>ardupilotmega.xml</include>
     <!-- <version>9</version> -->
     <dialect>8</dialect>
 
